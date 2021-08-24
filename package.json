@@ -1,0 +1,40 @@
+{
+  "name": "chrome-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run-script test_e2e",
+    "test_e2e": "mocha chrome_test/test_001.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devunion/chrome-extension-testing-puppeteer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devunion/chrome-extension-testing-puppeteer/issues"
+  },
+  "homepage": "https://github.com/devunion/chrome-extension-testing-puppeteer#readme",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "bufferutil": "^4.0.1",
+    "build": "^0.1.4",
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "htmlhint": "^0.13.0",
+    "js-yaml": "^3.14.0",
+    "jsonlint": "^1.6.3",
+    "mocha": "^7.1.2",
+    "puppeteer": "^3.1.0",
+    "stylelint": "^13.5.0",
+    "stylelint-config-standard": "^20.0.0",
+    "test": "^0.6.0",
+    "utf-8-validate": "^5.0.2"
+  }
+}
