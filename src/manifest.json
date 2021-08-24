@@ -1,56 +1,64 @@
 {
-	"manifest_version": 2,
-	"default_locale": "en",
-
-	"name": "__MSG_ext_name__",
-	"short_name": "__MSG_ext_short_name__",
-	"description": "__MSG_ext_description__",
-	"version": "0.0.3",
-	"version_name": "0.1 beta",
-	"homepage_url": "http://witnessthismedia.com/",
-	"incognito": "split",
-
-	"browser_action": {
-		"default_popup": "popup.html",
-		"default_title": "__MSG_ext_default_title__",
-		"default_icon": {
-			"16": "assets/img/16x16.png",
-			"19": "assets/img/19x19.png",
-			"32": "assets/img/32x32.png",
-			"48": "assets/img/48x48.png",
-			"64": "assets/img/64x64.png",
-			"128": "assets/img/128x128.png"
-		}
-	},
-
-	"content_scripts": [{
-		"matches": ["<all_urls>"],
-		"js": ["lib/jquery-3.5.1.slim.min.js",
-			"assets/js/constants.js",
-			"assets/js/utilities.js",
-			"assets/js/content.js"
-		]
-	}],
-	"background": {
-		"scripts": [
-					"lib/jquery-3.5.1.slim.min.js",
-					"assets/js/constants.js",
-					"assets/js/background.js"
-		]
-	},
-	"permissions": [
-		"activeTab",
-		"storage",
-		"notifications",
-		"https://*/",
-		"http://*/"
-	],
-	"icons": {
-		"16": "assets/img/16x16.png",
-		"19": "assets/img/19x19.png",
-		"32": "assets/img/32x32.png",
-		"48": "assets/img/48x48.png",
-		"64": "assets/img/64x64.png",
-		"128": "assets/img/128x128.png"
-	}
+  "manifest_version": 2,
+  "default_locale": "en",
+  "name": "__MSG_ext_name__",
+  "short_name": "__MSG_ext_short_name__",
+  "description": "__MSG_ext_description__",
+  "version": "0.0.3",
+  "version_name": "0.1 beta",
+  "homepage_url": "http://witnessthismedia.com/",
+  "incognito": "split",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_ext_default_title__",
+    "default_icon": {
+      "16": "assets/img/16x16.png",
+      "19": "assets/img/19x19.png",
+      "32": "assets/img/32x32.png",
+      "48": "assets/img/48x48.png",
+      "64": "assets/img/64x64.png",
+      "128": "assets/img/128x128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "lib/jquery-3.5.1.slim.min.js",
+        "assets/js/constants.js",
+        "assets/js/utilities.js",
+        "assets/js/content.js"
+      ]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "assets/js/content-2.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "lib/jquery-3.5.1.slim.min.js",
+      "assets/js/constants.js",
+      "assets/js/background.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications",
+    "https://*/",
+    "http://*/"
+  ],
+  "icons": {
+    "16": "assets/img/16x16.png",
+    "19": "assets/img/19x19.png",
+    "32": "assets/img/32x32.png",
+    "48": "assets/img/48x48.png",
+    "64": "assets/img/64x64.png",
+    "128": "assets/img/128x128.png"
+  }
 }
