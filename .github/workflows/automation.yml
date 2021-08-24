@@ -1,0 +1,2 @@
+- name: Puppeteer Headful for Chrome Extension Testing
+  uses: djp3/puppeteer-headful@v1
