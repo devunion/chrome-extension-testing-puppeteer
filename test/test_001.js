@@ -1,9 +1,9 @@
 const assert = require('assert');
 const puppeteer = require('puppeteer');
 
-const C = require('../chrome/assets/js/constants.js');
+const C = require('../src/assets/js/constants.js');
 
-const extensionPath = "./chrome";
+const extensionPath = "./src";
 
 let extensionPage = null;
 let browser = null;
