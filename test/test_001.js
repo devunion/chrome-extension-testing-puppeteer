@@ -64,6 +64,17 @@ describe('Extension UI Testing', function() {
     })
   });
 
+  describe('Third Party Site Basics', async function() {
+    it('Find Manual Witness Button', async function() {
+      const targetPage = await browser.newPage();
+      await targetPage.goto('https://www.scrapeo.net');
+
+      const pageSelector = '#page';
+      const target = await targetPage.$(pageSelector);
+      assert.ok(target, pageSelector+' is not rendered');
+    })
+  });
+
   after(async function() {
     await browser.close();
   });
