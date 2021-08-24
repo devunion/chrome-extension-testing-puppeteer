@@ -47,6 +47,9 @@ describe('Extension UI Testing', function() {
   this.timeout(50000);
   before(async function() {
     //this.enableTimeouts(false)
+
+    console.log('CI: ' + process.env.CI + ', type: ' + typeof process.env.CI);
+
     await boot();
   });
 
