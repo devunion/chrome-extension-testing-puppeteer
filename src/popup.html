@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- 
+  Copyright 2020 Don Patterson, github: @djp3 email: d_j_p_3 at djp3.net
+
+  This file is part of the Witness This Media Chrome Extension (WTMCE).
+
+  WTMCE is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  WTMCE is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with WTMCE.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="lib/bootstrap.min.4.5.0.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    
+      <!-- Bootstrap Toggle CSS -->
+    <link rel="stylesheet" href="lib/bootstrap4-toggle.min.3.6.1.css"/>
+    
+      <!-- Local CSS -->
+    <!-- ToDo add integrity to this asset -->
+      <link rel="stylesheet" href="assets/css/witness.css"/>
+
+
+      <title>Witness This Media Chrome Extension</title>
+  </head>
+
+  <body>
+    <div class="d-flex flex-row no-gutters justify-content-center align-items-center">
+      <div class="flex-column p-2">
+        <span data-toggle="tooltip" data-placement="auto" id="auto_witness_slider_tooltip">
+          <input type="checkbox" id="auto_witness_slider"/>
+        </span>
+      </div>
+    </div>
+    <div class="d-flex flex-row no-gutters justify-content-center align-items-center">
+      <div class="flex-column p-2">
+        <span id="manual_witness_button_tooltip" data-toggle="tooltip" data-placement="auto">
+          <button type="button" id="manual_witness_button" class="btn btn-success"><i class="fas fa-sync fa-lg"></i></button>
+        </span>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="lib/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="lib/popper.min.1.16.0.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="lib/bootstrap.min.4.5.0.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+      <!-- Bootstrap Toggle JS -->
+    <script src="lib/bootstrap4-toggle.min.3.6.1.js"></script>
+
+      <!-- Font Awesome -->
+    <script src="lib/fontawesome_7fc3b3a74d.js" crossorigin="anonymous"></script>
+
+    
+    
+    
+    <!-- At the end so it has access to jquery -->
+    <script src="assets/js/utilities.js" charset="UTF-8"></script>
+    <script src="assets/js/popup.js" charset="UTF-8"></script>
+
+  </body>
+</html>

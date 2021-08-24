@@ -1,0 +1,26 @@
+{
+	"ext_name":{
+		"message": "Witness This Media",
+		"description": "Extension name"
+	} ,
+	"ext_short_name":{
+		"message": "Witness",
+		"description": "Extension short name"
+	} ,
+	"ext_description":{
+		"message": "The official Witness This Media media history extension",
+		"description": "Extension description"
+	} ,
+	"ext_default_title":{
+		"message": "Witness This Media",
+		"description": "Browser action popup default title"
+	} ,
+	"ext_auto_tooltip":{
+		"message": "Automatic Witnessing",
+		"description": "Tooltip for automatic witnessing slider"
+	},
+	"ext_manual_tooltip":{
+		"message": "Witness this page now",
+		"description": "Tooltip for manual witness button"
+	}
+}
