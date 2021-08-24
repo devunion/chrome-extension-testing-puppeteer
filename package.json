@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run-script test_e2e",
-    "test_e2e": "mocha chrome_test/test_001.js"
+    "test_e2e": "mocha test/test_001.js"
   },
   "repository": {
     "type": "git",
