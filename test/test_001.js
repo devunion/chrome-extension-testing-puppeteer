@@ -65,13 +65,24 @@ describe('Extension UI Testing', function() {
   });
 
   describe('Third Party Site Basics', async function() {
-    it('Find Manual Witness Button', async function() {
+    it('Find Scrapeo #page section', async function() {
       const targetPage = await browser.newPage();
       await targetPage.goto('https://www.scrapeo.net');
 
       const pageSelector = '#page';
       const target = await targetPage.$(pageSelector);
       assert.ok(target, pageSelector+' is not rendered');
+    })
+  });
+
+  describe('Content Script Basics', async function() {
+    it('div#ext-content-script-injected should be injected to any page', async function() {
+      const targetPage = await browser.newPage();
+      await targetPage.goto('https://www.scrapeo.net');
+
+      const elSelector = '#ext-content-script-injected';
+      const target = await targetPage.$(elSelector);
+      assert.ok(target, elSelector+' is not rendered');
     })
   });
 
